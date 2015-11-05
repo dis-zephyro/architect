@@ -1,0 +1,89 @@
+* {
+	@include box-sizing(border-box);
+}
+*:before,
+*:after {
+	@include box-sizing(border-box);
+}
+
+
+// Body reset
+
+html {
+	font-size: 10px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+
+body {
+	color: #252525;
+	font-size: 13px;
+	position: relative;
+	line-height: 1.61538;
+	background-color: #edf4f9;
+	font-family: 'PermianSansTypeface';
+}
+
+.container {
+	width: 1080px;
+	margin: 0 auto;
+	padding: 0 10px;
+	position: relative;
+	@include clearfix();
+}
+
+
+// Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+
+// Links
+
+a {
+
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		outline: none;
+	}
+
+}
+
+
+// Headings
+
+h1, h2, h3, h4 {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	font-weight: 700;
+}
+
+h2 {
+	color: #00a0ce;
+	font-size: 42px;
+	line-height: 42px;
+	text-align: center;
+	margin-bottom: 50px;
+	padding-bottom: 25px;
+	background: url("../img/h2_line.png") center bottom no-repeat;
+}
+
+p {
+	padding: 0;
+	margin: 0 0 10px 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}

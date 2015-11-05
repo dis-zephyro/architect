@@ -1,0 +1,77 @@
+.b01 {
+	height: 600px;
+	position: relative;
+	padding-top: 20px;
+	background: url("../img/b01_bg.jpg") top center no-repeat;
+
+	.b01__top {
+		height: 130px;
+		background: #fff;
+		position: relative;
+		padding: 23px 40px;
+		margin-bottom: 137px;
+		@include box-shadow(0px 2px 12px 0px rgba(0, 0, 0, 0.2));
+
+		.logo {
+			float: left;
+			width: 360px;
+			height: 84px;
+			color: #4f5667;
+			font-size: 18px;
+			line-height: 22px;
+			font-style: italic;
+			padding: 25px 0 25px 120px;
+			background: url("../img/logo.png") left center no-repeat;
+		}
+
+		.contact {
+			float: right;
+			width: 320px;
+			text-align: right;
+			padding-top: 20px;
+
+			a {
+				color: #00a5d4;
+				font-size: 32px;
+				font-weight: 700;
+				line-height: 32px;
+			}
+
+			span {
+				color: #4f5667;
+				display: block;
+				font-size: 15px;
+				line-height: 26px;
+				font-style: italic;
+			}
+		}
+	}
+
+	h1 {
+		z-index: 5;
+		margin: 0 40px;
+		padding: 18px 0;
+		font-size: 42px;
+		font-weight: 700;
+		background: #fff;
+		line-height: 60px;
+		text-align: center;
+		position: relative;
+		text-transform: uppercase;
+		@include box-shadow(0px 2px 12px 0px rgba(0, 0, 0, 0.2));
+	}
+
+	.b01__text {
+		z-index: 2;
+		color: #fff;
+		margin: 0 70px;
+		padding: 15px 0;
+		font-size: 19px;
+		line-height: 26px;
+		position: relative;
+		font-style: italic;
+		text-align: center;
+		background: #65ab06;
+		@include box-shadow( 0px 2px 8px 0px rgba(0, 0, 0, 0.2));
+	}
+}

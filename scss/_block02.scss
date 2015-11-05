@@ -1,0 +1,62 @@
+.b02 {
+	background: #fff;
+	padding-top: 70px;
+	padding-bottom: 50px;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			float: left;
+			width: 25%;
+			color: #000;
+			font-size: 16px;
+			line-height: 21px;
+			font-style: italic;
+			text-align: center;
+			position: relative;
+			padding-top: 160px;
+
+			&:before {
+				top: 0;
+				left: 50%;
+				width: 130px;
+				height: 130px;
+				content: ' ';
+				margin-left: -65px;
+				position: absolute;
+				background: url("../img/b02_items.png") no-repeat;
+			}
+
+			&.item1 {
+
+				&:before {
+					background-position: 0 0;
+				}
+			}
+
+			&.item2 {
+
+				&:before {
+					background-position: -130px 0;
+				}
+			}
+
+			&.item3 {
+
+				&:before {
+					background-position: 0 -130px;
+				}
+			}
+
+			&.item4 {
+
+				&:before {
+					background-position: -130px -130px;
+				}
+			}
+		}
+	}
+}
