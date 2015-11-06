@@ -25,9 +25,9 @@ body {
 }
 
 .container {
-	width: 1080px;
+	width: 1060px;
 	margin: 0 auto;
-	padding: 0 10px;
+	padding: 0 40px;
 	position: relative;
 	@include clearfix();
 }
@@ -72,9 +72,14 @@ h2 {
 	font-size: 42px;
 	line-height: 42px;
 	text-align: center;
-	margin-bottom: 50px;
 	padding-bottom: 25px;
 	background: url("../img/h2_line.png") center bottom no-repeat;
+}
+
+h3 {
+	color: #000;
+	font-size: 24px;
+	margin-bottom: 20px;
 }
 
 p {
