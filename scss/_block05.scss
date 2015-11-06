@@ -1,0 +1,95 @@
+.b05 {
+	z-index: 5;
+	position: relative;
+
+	&:before {
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 50;
+		height: 6px;
+		content: ' ';
+		background: #fff;
+		position: absolute;
+		@include box-shadow(0px -2px 4px 0px rgba(0, 0, 0, 0.2));
+	}
+
+	.content {
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 100;
+		position: absolute;
+	}
+
+	#map {
+		height: 670px;
+	}
+
+	.contact {
+		top: 80px;
+		color: #fff;
+		right: 50px;
+		width: 340px;
+		background: #fff;
+		position: absolute;
+		padding: 40px 30px 20px 30px;
+		@include box-shadow(0px 1px 8px 0px rgba(0, 0, 0, 0.3));
+
+		.contact__title {
+			color: #0092bc;
+			font-size: 40px;
+			font-weight: 700;
+			line-height: 40px;
+			margin-bottom: 10px;
+		}
+
+		dl {
+			margin: 0;
+			padding: 0 0 15px 0;
+
+			dt {
+				margin: 0;
+				color: #4f5667;
+				font-size: 16px;
+				line-height: 20px;
+				padding: 30px 0 3px 0;
+				text-transform: uppercase;
+			}
+
+			dd {
+				color: #000;
+				margin: 0;
+				padding: 0;
+				font-size: 20px;
+				line-height: 26px;
+
+				&.address {
+					font-size: 18px;
+					line-height: 26px;
+				}
+			}
+
+			a {
+				color: #2088e1;
+				text-decoration: underline;
+
+				&:hover {
+					text-decoration: none;
+				}
+
+
+				&.tel {
+					color: #000;
+					text-decoration: none;
+				}
+			}
+		}
+
+		.sup {
+			color: #000;
+			font-size: 14px;
+			line-height: 18px;
+		}
+	}
+}

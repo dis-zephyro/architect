@@ -79,6 +79,13 @@
 			.service__table_item {
 				padding: 25px 0;
 				border-bottom: 1px solid #e1e9ed;
+
+				.detail {
+					color: #4f5667;
+					cursor: pointer;
+					text-decoration: none;
+					border-bottom: 1px dashed #4f5667;
+				}
 			}
 
 			.term {
